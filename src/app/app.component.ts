@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Iproduct } from './models/products';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +7,6 @@ import { Iproduct } from './models/products';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  // products:Iproduct[];
 
   constructor(private http:HttpClient){}
   ngOnInit(): void {

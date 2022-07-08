@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CartService } from '../cart.service';
-import { Iproduct } from '../models/products';
 
 @Component({
   selector: 'app-product-item',
@@ -9,7 +8,7 @@ import { Iproduct } from '../models/products';
   styleUrls: ['./product-item.component.css']
 })
 export class ProductItemComponent implements OnInit {
-  @Input() product:Iproduct
+  @Input() product:any
 
   constructor(private service:CartService,private route:Router) { }
   userId:1000;

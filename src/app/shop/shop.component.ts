@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ShopService } from './shop.service';
-import { Iproduct } from '../models/products';
-import { ShopParams } from '../models/shopParams';
 import { map } from 'rxjs';
 
 @Component({
